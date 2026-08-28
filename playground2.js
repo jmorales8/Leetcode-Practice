@@ -1,8 +1,3 @@
-function fart(deez) {
-  for(let i = 0; i < 3; i++) {
-    deez += 3
-  }
-  return deez
-}
+const count = 3
 
-console.log(fart(3))
+console.log(-count < 0 ? true : false)
