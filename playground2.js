@@ -1,3 +1,5 @@
-const count = 3
 
-console.log(-count < 0 ? true : false)
+let array = [1, 2, 3, 2, 4]
+
+console.log(array.splice(1, 1))
+console.log(array)
