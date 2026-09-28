@@ -1,28 +1,16 @@
-const target = 3
-let array = [1, 2, 3, 5, 6, 7, 8, 9]
-let right = array.length - 1;
-let left = 0;
+var search = function(nums, target) {
+    let left = 0
+    let right = nums.length - 1
+    while(left <= right) {
+        let middle = Math.floor((left + right) / 2)
+        if(target > nums[left]) {
 
-console.log(left, right)
+        } else
+    }
+};
 
-while(left <= right) {
-  // Calculate the middle index and round down
-  let mid = Math.floor((left + right) / 2);
-  console.log("beginning:", left, right, mid)
-
-  // Check if the target is at the mid position
-  if (array[mid] === target) {
-      console.log(mid); // Target found, return its index
-  }
-  // If target is greater, ignore the left half
-  if (array[mid] < target) {
-      left = mid + 1;
-  }
-  // If target is smaller, ignore the right half
-  else {
-      right = mid - 1;
-  }
-  console.log("end:", left, right, mid)
-}
-
-return -1
+const bruh = [4,5,6,7,0,1,2]
+target = 4
+console.log(bruh[0], bruh[Math.floor(bruh.length / 2)], bruh[bruh.length-1])
+console.log(search([4,5,6,7,0,1,2], 0))
+console.log(search([4,5,6,7,0,1,2], 3))
